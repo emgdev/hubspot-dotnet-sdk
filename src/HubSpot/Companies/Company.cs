@@ -38,7 +38,7 @@ namespace HubSpot.Companies
 
         [CustomProperty("country")]
         public string Country { get; set; }
-
-        IReadOnlyDictionary<string, object> IHubSpotEntity.Properties { get; set; } = new Dictionary<string, object>();
+        
+        public Dictionary<string, object> Properties { get; set; } = new Dictionary<string, object>();
     }
 }

@@ -38,7 +38,7 @@ namespace HubSpot.Deals
 
         public IReadOnlyList<long> AssociatedDealIds { get; set; } = Array.Empty<long>();
 
-        IReadOnlyDictionary<string, object> IHubSpotEntity.Properties { get; set; } = new Dictionary<string, object>();
+        Dictionary<string, object> IHubSpotEntity.Properties { get; set; } = new Dictionary<string, object>();
 
         IReadOnlyDictionary<string, IReadOnlyList<long>> IHubSpotDealEntity.Associations { get; set; } = new Dictionary<string, IReadOnlyList<long>>();
     }

@@ -33,6 +33,12 @@
                 return true;
             }
 
+            if (int.TryParse(value.ToString(), out int numberResult))
+            {
+                result = numberResult.ToString("D");
+                return true;
+            }
+
             result = null;
             return false;
         }

@@ -38,6 +38,6 @@ namespace HubSpot.Contacts
         [CustomProperty("associatedcompanyid")]
         public long AssociatedCompanyId { get; set; }
 
-        IReadOnlyDictionary<string, object> IHubSpotEntity.Properties { get; set; } = new Dictionary<string, object>();
+        Dictionary<string, object> IHubSpotEntity.Properties { get; set; } = new Dictionary<string, object>();
     }
 }

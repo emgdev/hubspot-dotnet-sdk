@@ -4,7 +4,7 @@ namespace HubSpot
 {
     public interface IHubSpotEntity
     {
-        IReadOnlyDictionary<string, object> Properties { get; set; }
+        Dictionary<string, object> Properties { get; set; }
     }
 
     public struct PropertyData
